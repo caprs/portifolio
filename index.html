@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portifólio</title>
+    <link rel="icon" href="imagem/codigo.png" type="image/png"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="manutencao.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+           
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+            </ul>            
+            <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <div class="container">
+            <div class="conteudo">
+                
+                <img src="imagem/eu (2).jpeg" alt="Minha foto" class="eu">
+                <h1>Ana Livia Caprioli</h1>
+                <p class="animado" id="efeitoTexto">Desenvolvedora de software em aprendizado</p>
+                <div class="redes">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="imagem/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://github.com/caprs" target="_blank">
+                        <img src="imagem/github.png" alt="whatsapp">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ana-livia-caprioli-666597306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="imagem/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                        <img src="imagem/gmail.png" alt="linkedin">
+                    </a>
+                </div>
+
+                <div class="seta_animada">
+                    <img src="imagem/seta-para-baixo.png" class="seta_animada" id="seta_animada">                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container2">
+            <h1>Sobre mim</h1>
+            <div class="conteudo2">
+               
+                <div class="texto">
+                    <p>
+                        Olá, sou Ana Livia Caprioli, tenho 17 anos e atualmente sou uma desenvolvedora júnior a 2 anos. Minha jornada começou quando ingressei no curso de Desenvolvimento de Sistemas na instuição SENAI-SP em Ourinhos. 
+                        Durante esses anos, tive contato com diversas linguagens, entre elas: HTML, CSS, PHP, MySQL, JavaScript, Node.js, TypeScript e Angular.js.
+                    </p>
+                    <p>
+                        Porém, obviamente, criei afeições maiores por linguagens específicas. O PHP, JS, HTML e CSS me ganharam pela forma prática de serem aplicados. Ainda assim, como estou em busca pela constante evolução e aprendizado dentro deste meio, decidi ingressar em um curso de Python para Cybersegurança, que mais uma vez o SENAI proporcionou. Portanto, utilizar essas linguagens em conjunto enriqueceram minha forma de evoluir dentro do ramo da programação.
+                    </p>
+                    <p>
+                        Sendo assim, fiz este portifólio para apresentar para os interessados, alguns dos projetos que produzi para por em prática meus aprendizados e ainda acrescentar com projetos futuros que virão ao longo da minha carreira profissional. Espero que gostem!
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container3">
+            <h1>Meus Projetos</h1>
+            <div class="projetos-cards">
+                <!-- Card do Projeto 1 -->
+                <div class="card-container">
+                    <div class="card" onclick="toggleProjeto('projeto1')">
+                        <h3>TaskDesk</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="projeto1" class="projeto-detalhes">
+                        <p>Este é meu TCC e o projeto final durante os 2 anos de SENAI. Nele utilizei HTML, CSS, JS e PHP.</p>
+                        <a href="https://caprs.github.io/TaskDesk_TCC/" target="_blank">Visualizar</a>
+                    </div>
+                </div>
+    
+                <!-- Card do Projeto 2 -->
+                <div class="card-container">
+                    <div class="card" onclick="toggleProjeto('projeto2')">
+                        <h3>CSS</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="projeto2" class="projeto-detalhes">
+                        <p>Esta é uma página inicial de login com HTML, CSS e JS.</p>
+                        <a href="https://caprs.github.io/ExemploCss_pagina_inicial/" target="_blank">Visualizar</a>
+                    </div>
+                </div>
+    
+                <!-- Card do Projeto 3 -->
+                <div class="card-container">
+                    <div class="card" onclick="toggleProjeto('projeto3')">
+                        <h3>MarketPlace - imagens diretas no banco de dados</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="projeto3" class="projeto-detalhes">
+                        <p>Este projeto teve como objetivo colocar em prática um marketplace que tenha imagens que são inseridas no próprio banco de dados. </p>
+
+                        <a href="https://caprs.github.io/marketplace/" target="_blank">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card" onclick="toggleProjeto('projeto4')">
+                        <h3>Landing Page</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="projeto4" class="projeto-detalhes">
+                        <p>Projeto em landing page com o objetivo de divulgar um EBOOK de um empreendedor dono de academia. </p>
+
+                        <a href="https://caprs.github.io/Projeto-divulga-o-academia/" target="_blank">Visualizar</a>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card" onclick="toggleProjeto('projeto5')">
+                        <h3>Sistema de biblioteca</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="projeto5" class="projeto-detalhes">
+                        <p>Projeto de um sistema básico de biblioteca, com cadastro de livros, alunos, visualização de status de livros e etc.</p>
+
+                        <a href="https://caprs.github.io/biblioteca_projeto/" target="_blank">Visualizar</a>
+                    </div>
+                </div>
+
+
+                <div class="card-container">
+                    <div class="card" onclick="toggleProjeto('projeto6')">
+                        <h3>IONIC</h3>
+                        <div class="arrow"></div>
+                    </div>
+                    <div id="projeto6" class="projeto-detalhes">
+                        <p>Um dos projetos em IONIC. Reprodução do layout do app IFOOD.</p>
+
+                        <a href="https://github.com/caprs/IFOOD_ionic" target="_blank">Visualizar estrutura do código</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
