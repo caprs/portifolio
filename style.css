@@ -357,10 +357,10 @@ body.modo-claro .card {
     }
 
     .navbar {
-        width: 100%;
+        width: 80%;
         padding: 10px;
-        top: 0;
-        left: 0;
+        top: 10px;
+        left: 8%;
         transform: translateX(0);
     }
 
